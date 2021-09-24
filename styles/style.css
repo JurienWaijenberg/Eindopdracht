@@ -1,0 +1,263 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+body {
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background: #313132;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  padding: 0em 1em;
+  justify-content: space-between;
+}
+
+header a {
+  min-width: 0px;
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+
+
+section#apple-event {
+  background: url(../images/Apple-event.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  color: #fff;
+  justify-content: flex-end;
+  padding: 1em;
+  padding-bottom: 58px;
+  position: relative;
+}
+
+section#iphone-13-pro {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 81vh;
+  padding: 1em;
+  padding-bottom: 0px;
+  background-color: #f5f5f7;
+  position: relative;
+}
+
+section#iphone-13-pro a {
+  border: 2px solid #000;
+}
+
+section#iphone-13-pro img {
+  position: absolute;
+  padding: 0em 3em;
+  bottom: 0;
+  left: 0;
+}
+
+section#iphone-13 {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 77vh;
+  padding: 1em;
+  padding-bottom: 0px;
+  color: #fff;
+  background-color: #34283c;
+  position: relative;
+}
+
+section#iphone-13 a {
+  border: 2px solid #fff;
+}
+
+section#iphone-13 img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+section#apple-watch-7 {
+  background: url(../images/Apple-watch-7.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 77vh;
+  padding: 1em;
+  padding-bottom: 0px;
+  color: #000;
+  background-color: #f5f5f7;
+  position: relative;
+}
+
+section#apple-watch-7 img:nth-child(1) {
+  margin-top: 77px;
+  width: 124px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section#apple-watch-7 a {
+  border: 2px solid #000;
+}
+
+section#ipad-mini {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 94vh;
+  padding: 1em;
+  padding-bottom: 0px;
+  color: #000;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+section#ipad-mini img:nth-child(1) {
+  margin-top: 77px;
+  width: 160px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section#ipad-mini a {
+  border: 2px solid #000;
+}
+
+#ipad-mini-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(55px) translateY(70px);
+  animation: fadeIn .5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+section#ipad {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 94vh;
+  padding: 1em;
+  padding-bottom: 0px;
+  color: #000;
+  background-color: #f5f5f7;
+  position: relative;
+  overflow: hidden;
+}
+
+section#ipad a {
+  border: 2px solid #000;
+}
+
+section#ipad img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  margin: 0;
+  margin-top: 70px;
+  font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+h3 {
+  font-size: 19px;
+  line-height: 1.2105263158;
+  font-weight: 600;
+  letter-spacing: .012em;
+  margin: 0;
+  margin-top: 20px;
+  font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+span {
+  margin-top: 25px;
+  color: #6e6e73;
+  font-size: 12px;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+a {
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  min-width: 26px;
+  background: none;
+  min-width: 97px;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-radius: 980px;
+  min-width: 133px;
+  max-width: 266px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+a.dark {
+  color: #fff;
+  border-color: #fff;
+}
+
+section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  font-family: SF Pro Text,Myriad Set Pro,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: #86868b;
+  text-align: left;
+}
+
+footer {
+  background: #F5F5F7;
+  padding: 1em;
+}
