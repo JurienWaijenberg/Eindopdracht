@@ -1,0 +1,163 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+body {
+  margin: 0px;
+  background: #F5F5F7;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background: #313132;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  padding: 0em 1em;
+  justify-content: space-between;
+}
+
+header a {
+  min-width: 0px;
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+main {
+  padding: 1em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(3) {
+  flex-wrap: nowrap;
+    display: flex;
+    overflow-x: auto;
+}
+
+section:nth-child(3)>section {
+  width: 100%;
+  vertical-align: top;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+article:nth-child(1) {
+  background: url(../images/store-card-40-pro-202109.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+}
+
+article {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 2em;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -.003em;
+  font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: .007em;
+  font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+h3 {
+  font-size: 19px;
+  line-height: 1.2105263158;
+  font-weight: 600;
+  letter-spacing: .012em;
+  margin: 0;
+  margin-top: 20px;
+  font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+span {
+  margin-top: 25px;
+  color: #6e6e73;
+  font-size: 12px;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+a {
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  min-width: 26px;
+  background: none;
+  min-width: 97px;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-radius: 980px;
+  min-width: 133px;
+  max-width: 266px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+a.dark {
+  color: #fff;
+  border-color: #fff;
+}
+
+section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  font-family: SF Pro Text,Myriad Set Pro,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: #86868b;
+  text-align: left;
+}
+
+footer {
+  background: #F5F5F7;
+  padding: 1em;
+}

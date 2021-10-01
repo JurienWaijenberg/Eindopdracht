@@ -28,7 +28,10 @@ header a {
   text-decoration: none;
 }
 
-
+a {
+  color: #000;
+  text-decoration: none;
+}
 
 section#apple-event {
   background: url(../images/Apple-event.jpg);
@@ -79,6 +82,7 @@ section#iphone-13 {
 
 section#iphone-13 a {
   border: 2px solid #fff;
+  color: #fff;
 }
 
 section#iphone-13 img {
