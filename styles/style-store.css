@@ -15,11 +15,16 @@ img {
 
 header {
   background: #313132;
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
   padding: 0em 1em;
-  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
 }
 
 header a {
@@ -30,74 +35,66 @@ header a {
   text-decoration: none;
 }
 
-main {
-  padding: 1em;
-}
-
 a {
   color: #000;
   text-decoration: none;
 }
 
-
-section {
-  display: flex;
-  flex-direction: column;
-}
-
-section:nth-child(3) {
-  flex-wrap: nowrap;
-    display: flex;
-    overflow-x: auto;
-}
-
-section:nth-child(3)>section {
-  width: 100%;
-  vertical-align: top;
-  display: inline-flex;
-  flex-direction: row;
-}
-
-article:nth-child(1) {
-  background: url(../images/store-card-40-pro-202109.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #fff;
-}
-
-article {
-  width: 300px;
-  height: 500px;
-  background-color: #fff;
-  border-radius: 18px;
-  padding: 2em;
+p {
+  font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1.08349;
   font-weight: 600;
   letter-spacing: -.003em;
+  color: #1d1d1f;
   font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 21px;
   line-height: 1.14286;
   font-weight: 600;
   letter-spacing: .007em;
+  color: #1d1d1f;
   font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 h3 {
-  font-size: 19px;
+  font-size: 24px;
   line-height: 1.2105263158;
   font-weight: 600;
   letter-spacing: .012em;
   margin: 0;
   margin-top: 20px;
+  color: #1d1d1f;
   font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+h4 {
+  font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: #bf4800;
+  display: block;
 }
 
 span {
@@ -119,9 +116,7 @@ a {
   min-width: 26px;
   background: none;
   min-width: 97px;
-  padding: 10px 16px;
   cursor: pointer;
-  display: inline-block;
   text-align: center;
   border-radius: 980px;
   min-width: 133px;
@@ -156,6 +151,244 @@ li {
   color: #86868b;
   text-align: left;
 }
+
+section:nth-child(3)>section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 170px;
+  padding: 10px 0px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main>section {
+  padding: 1em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main>section:nth-child(1) {
+  text-align: center;
+  background-color: #fff;
+}
+
+main>section:nth-child(1) p {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -.016em;
+  font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+main>section:nth-child(1) p a {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -.016em;
+  font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+section:nth-child(3)>section section {
+  flex: 0 0 auto;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+}
+section:nth-child(4)>section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 470px;
+  padding: 10px 0px;
+}
+section:nth-child(4)>section>article:nth-child(1) {
+  background: url(../images/store-card-40-pro-202109.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+}
+section:nth-child(4)>section>article:nth-child(2) {
+  background: url(../images/store-card-40-ipadmini-202109.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+}
+section:nth-child(5)>section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 470px;
+  padding: 10px 0px;
+}
+section:nth-child(5)>section>article:nth-child(1) {
+  background: url(../images/store-card-50-specialist-202108.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+}
+section:nth-child(5) section section article:nth-child(1) {
+  background: url(../images/store-card-25-apps-202108_FMT_WHH.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  height: 213px;
+  margin-bottom: 1.5em;
+}
+section:nth-child(5) section section article:nth-child(2) {
+  background: url(../images/store-card-25-genius-202108_FMT_WHH.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  height: 213px;
+}
+
+section:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+}
+section:nth-child(6)>section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 240px;
+  padding: 10px 0px;
+}
+section:nth-child(6)>section article {
+  height: 215px;
+}
+
+section:nth-child(6)>section article:nth-child(1) svg {
+  height: 56px;
+  color: #ff0053;
+}
+section:nth-child(6)>section article:nth-child(2) svg {
+  height: 56px;
+  color: #3f6eb8;
+}
+
+section:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+}
+section:nth-child(7)>section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 470px;
+  padding: 10px 0px;
+}
+
+section:nth-child(8) {
+  display: flex;
+  flex-direction: column;
+}
+section:nth-child(8)>section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 470px;
+  padding: 10px 0px;
+}
+section:nth-child(8) section article:nth-child(1) {
+  background: url(../images/store-card-40-findmy-202108_FMT_WHH.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+
+section:nth-child(9) {
+  display: flex;
+  flex-direction: column;
+}
+section:nth-child(9)>section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 470px;
+  padding: 10px 0px;
+}
+section:nth-child(9) section article:nth-child(1) {
+  background: url(../images/store-card-50-todayatapple-202108_FMT_WHH.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+section:nth-child(9) section article:nth-child(2) {
+  background: url(../images/store-card-50-subscriptions-202108_FMT_WHH.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+}
+
+section:nth-child(10) {
+  display: flex;
+  flex-direction: column;
+}
+section:nth-child(10)>section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 470px;
+  padding: 10px 0px;
+}
+section:nth-child(10) section article:nth-child(1) {
+  background: url(../images/store-card-40-edu-202108_FMT_WHH.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+}
+section:nth-child(10) section article:nth-child(2) {
+  background: url(../images/store-card-40-small-business-202108_FMT_WHH.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+}
+
+section:nth-child(10) section article:nth-child(2) h2{
+  color: #fff;
+}
+
+
+article {
+  width: 300px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 2em;
+  flex: 0 0 auto;
+  margin-right: 1.5em;
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+
 
 footer {
   background: #F5F5F7;

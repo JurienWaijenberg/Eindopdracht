@@ -7,17 +7,28 @@ body {
   margin: 0px;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 img {
   width: 100%;
 }
 
 header {
   background: #313132;
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
   padding: 0em 1em;
-  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
 }
 
 header a {
@@ -33,7 +44,7 @@ a {
   text-decoration: none;
 }
 
-section#apple-event {
+main section:nth-child(1) {
   background: url(../images/Apple-event.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -44,9 +55,10 @@ section#apple-event {
   padding: 1em;
   padding-bottom: 58px;
   position: relative;
+  width: 100%;
 }
 
-section#iphone-13-pro {
+main section:nth-child(2) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -57,18 +69,18 @@ section#iphone-13-pro {
   position: relative;
 }
 
-section#iphone-13-pro a {
+main section:nth-child(2) a {
   border: 2px solid #000;
 }
 
-section#iphone-13-pro img {
+main section:nth-child(2) img {
   position: absolute;
   padding: 0em 3em;
   bottom: 0;
   left: 0;
 }
 
-section#iphone-13 {
+main section:nth-child(3) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -80,18 +92,18 @@ section#iphone-13 {
   position: relative;
 }
 
-section#iphone-13 a {
+main section:nth-child(3) a {
   border: 2px solid #fff;
   color: #fff;
 }
 
-section#iphone-13 img {
+main section:nth-child(3) img {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-section#apple-watch-7 {
+section:nth-child(4) {
   background: url(../images/Apple-watch-7.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -104,7 +116,7 @@ section#apple-watch-7 {
   position: relative;
 }
 
-section#apple-watch-7 img:nth-child(1) {
+section:nth-child(4) img:nth-child(1) {
   margin-top: 77px;
   width: 124px;
   height: 48px;
@@ -112,11 +124,12 @@ section#apple-watch-7 img:nth-child(1) {
   margin-right: auto;
 }
 
-section#apple-watch-7 a {
+section:nth-child(4) a {
   border: 2px solid #000;
 }
 
-section#ipad-mini {
+section:nth-child(5) {
+  background: url(../images/Ipad-mini.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -129,7 +142,7 @@ section#ipad-mini {
   overflow: hidden;
 }
 
-section#ipad-mini img:nth-child(1) {
+section:nth-child(5) img:nth-child(1) {
   margin-top: 77px;
   width: 160px;
   height: 32px;
@@ -137,25 +150,11 @@ section#ipad-mini img:nth-child(1) {
   margin-right: auto;
 }
 
-section#ipad-mini a {
+section:nth-child(5) a {
   border: 2px solid #000;
 }
 
-#ipad-mini-img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateX(55px) translateY(70px);
-  animation: fadeIn .5s ease forwards;
-  opacity: 0;
-}
-
-@keyframes fadeIn{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-section#ipad {
+section:nth-child(6) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -168,11 +167,11 @@ section#ipad {
   overflow: hidden;
 }
 
-section#ipad a {
+section:nth-child(6) a {
   border: 2px solid #000;
 }
 
-section#ipad img {
+section:nth-child(6) img {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -264,4 +263,20 @@ li {
 footer {
   background: #F5F5F7;
   padding: 1em;
+}
+
+@media only screen and (min-width: 520px) {
+  section#iphone-13-pro {
+    width: 50%;
+  }
+  section#iphone-13 {
+    width: 50%;
+    height: 81vh;
+  }
+  section#ipad-mini {
+    width: 50%;
+  }
+  section#ipad {
+    width: 50%;
+  }
 }
