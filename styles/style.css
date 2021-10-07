@@ -266,17 +266,17 @@ footer {
 }
 
 @media only screen and (min-width: 520px) {
-  section#iphone-13-pro {
+  section:nth-child(2) {
     width: 50%;
   }
-  section#iphone-13 {
+  section#:nth-child(3) {
     width: 50%;
     height: 81vh;
   }
-  section#ipad-mini {
+  section:nth-child(5) {
     width: 50%;
   }
-  section#ipad {
+  section:nth-child(6) {
     width: 50%;
   }
 }
