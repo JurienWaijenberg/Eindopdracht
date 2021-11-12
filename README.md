@@ -40,7 +40,7 @@ Responsive
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/Home-Apple.jpg" width="375px" alt="home pagina van apple">
+<img src="https://raw.githubusercontent.com/JurienWaijenberg/Eindopdracht/main/images/Home-Apple.jpg" width="375px" alt="home pagina van apple">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
