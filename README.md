@@ -40,7 +40,7 @@ Responsive
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="https://raw.githubusercontent.com/JurienWaijenberg/Eindopdracht/main/images/Home-Apple.jpg" width="375px" alt="home pagina van apple">
+<img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/Apple-home.jpg" width="375px" alt="home pagina van apple">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
@@ -58,13 +58,10 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/Breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/Dynamisch-deel.png" width="375px" alt="Dynamisch deel, de header navigatie">
 
 </details>
 
@@ -78,13 +75,12 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-Deze week was ik begonnen aan de home pagina. Deze was zo goed als klaar. Het voortgangs gesperk heb ik deze week gemist en de week hierna weer ingehaald. Ik heb dit gesperk dus alleen met Robert gehad.
-
+Deze week ben ik begonnen aan de home pagina. Deze is zo goed als klaar. Het voortgangs gesperk heb ik deze week gemist en de week hierna weer ingehaald. Ik heb dit gesperk dus alleen met Robert gehad. Het maakt het coderen een stuk makkelijker met de breakdown schetsen. Deze methode heb ik hiervoor nooit gebruikt, deze ga ik in de toekomst zeker gebruiken bij andere projecten en opdrachten.
 
 ### Verslag van meeting
 Robert vertelde mij dat de opzet er goed uitziet en dat ik lekker opweg ben.
 
-- De pagina was nog niet responsive.
+- De pagina is nog niet responsive.
 
 </details>
 
@@ -98,26 +94,16 @@ Robert vertelde mij dat de opzet er goed uitziet en dat ik lekker opweg ben.
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Afgelopen week ben ik begonnen met de store pagina. Ik had eerst besloten om de iPhone 12 pagina te gaan maken maar los van de hele gafe animatie's is er vrij weinig content op de pagina. Op de store pagina is dit wat meer gevarieerd.
+Tijdens deze feedback ronde heb ik eigenlijk alleen feedback gehad van de studentassistent. Juul Vrasdonk vond dat de basis van de website er goed uit ziet. Zelf had ik een vraag over het horizontaal scrolbaar maken van de blokken op de store pagina. Hier heeft Juul me mee geholpen. Dit komt op veel plekken terug op de pagina het is dus erg fijn dat dit nu werkt!
 
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+<img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/horizontaal-scroll.png" width="375px" alt="Code voor de horizontale scroll">
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Erg blij met de feedback die ik gekregen heb van Juul.
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Alle blokken horizontaal scrollbaar maken
+- De id's weg halen en twee css bestanden gebruiken
 
 </details>
 
@@ -133,28 +119,20 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Tab test
+Met deze test ga je kijken hoe de website gebruikt wordt wanneer je alleen een toetsenbord kan gebruiken. Op de home pagina ging dit goed, op de store pagina niet. Er zitten nog geen linkjes in waardoor de tab functie niet werkt.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Dit ga ik oplossen door van alle blokken een knop te maken, dit is op de echte website ook zo.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Voice over
+Bij deze test laat je de computer je website voorlezen. Dit wordt voornamelijkt gebruikt door mensen die slechtziend of blind zijn. Dit ging op de meeste vlakken goed op een paar afbeeldingen na.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+In de afbeeldingen staat de alt tekst niet goed waardoor de omschrijving van de afbeelding niet klopt.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Oog test met brillen
+Er waren verschillende brillen beschrikbaar om verschillende aandoeningen te testen. Ik weet niet precies alle namen meer. Wel weet ik dat bij bijna alle testen de webpagina nog leesbaar is. Er zat er een tussen waarbij je een grote zwarte vlek in het midden van je zicht hebt. Bij deze was de pagina niet leesbaar, om eerlijk te zijn weet ik ook niet hoe ik dit kan oplossen. De rest van mijn omgeving is namelijk ook niet te zien. Met deze aandoening ben je eigenlijk bijna blind.
 
 </details>
 
@@ -168,26 +146,16 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Afgelopen week ben ik niet heel veel verder gekomen. Ik moet deze week echt aan de bak om alles op tijd af te krijgen.
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Ook deze week heb ik feedback gekregen van Juul. Omdat ik niet veel verder ben gekomen was er eigenlijk ook geen nieuwe feedback.
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Responsive nog goed checken
+- Blokken scrollbaar maken
+- Alt teksten afbeeldingen goed zetten
+- Blokken klikbaar maken
 
 </details>
 
@@ -201,11 +169,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Afgelopen week was erg druk, ik heb te veel tijd in vormgeven gestoken waardoor ik niet tevreden ben met het eindresultaat van mijn website. Ik heb veel dingen niet afgekregen. De header is niet af de footer ook niet. Er zit nog geen microanimatie in en mijn proces verslag was nog niet klaar. 
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/eindresultaat-home.png" width="375px" alt="Schermafbeelding homepagina">
+<img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/eindresultaat-store.png" width="375px" alt="Schermafbeelding store pagina">
 
 </details>
 
@@ -218,10 +187,8 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
-3. ...
+1. Apple voor alle content <a href="https://www.apple.com/nl/">apple.nl</a>
+2. <a href="https://codepen.io/designcouch/pen/Atyop">Codepen voor de animatie van de hamburger menu</a>
+3. Mijn eigen werk van vorig jaar om de JS functies weer even op te frissen
 
 </details>
