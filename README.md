@@ -39,12 +39,12 @@ Responsive
 <a href="https://www.apple.com/nl/">Apple</a>
 
 #### Screenshot(s) van de eerste pagina (small screen):
-hier de naam van de pagina  
+Home pagina 
 <img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/Apple-home.jpg" width="375px" alt="home pagina van apple">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/IPhone12.jpg" width="375px" alt="store pagina van apple">
+Store pagina 
+<img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/store.png" width="375px" alt="store pagina van apple">
 
 </details>
 
