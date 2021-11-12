@@ -3,7 +3,7 @@
 function mobilenav() {
     var x = document.getElementById("navbar");
     var body = document.getElementsByTagName('body')[0];
-    var navicon = document.getElementById('nav-icon4');
+    var navicon = document.getElementById('nav-icon');
     if (x.style.display === "block") {
       x.style.display = "none";
       body.style.overflow = "auto";

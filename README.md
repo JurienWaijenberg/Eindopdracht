@@ -189,6 +189,7 @@ Afgelopen week was erg druk, ik heb te veel tijd in vormgeven gestoken waardoor 
 
 1. Apple voor alle content <a href="https://www.apple.com/nl/">apple.nl</a>
 2. <a href="https://codepen.io/designcouch/pen/Atyop">Codepen voor de animatie van de hamburger menu</a>
+3. <a href="https://www.internetingishard.com/html-and-css/">Internetingishard voor alle flexbox oplossingen</a>
 3. Mijn eigen werk van vorig jaar om de JS functies weer even op te frissen
 
 </details>

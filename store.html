@@ -16,26 +16,53 @@
     <header>
 		<ul>
 			<li>
-				<nav>
-					<a href="store.html">Store</a>
+				<a href="#" id="nav-icon" onclick="mobilenav()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<nav id="navbar">
+					<ul>
+						<li>
+							<form action="#">
+								<input type="text" placeholder="Zoeken op apple.nl" name="search">
+							</form>
+						</li>
+						<li><a href="store.html">Store</a></li>
+						<li><a href="#">Mac</a></li>
+						<li><a href="#">iPad</a></li>
+						<li><a href="#">iPhone</a></li>
+						<li><a href="#">Watch</a></li>
+						<li><a href="#">Airpods</a></li>
+						<li><a href="#">Tv & Woning</a></li>
+						<li><a href="#">Alleen met Apple</a></li>
+						<li><a href="#">Accessoires</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
 				</nav>
 			</li>
 			<li>
 				<a href="index.html">
-					<svg xmlns="http://www.w3.org/2000/svg" width="17.182" height="21.082" viewBox="0 0 17.182 21.082" alt="Logo Apple">
-						<path id="apple-logo" d="M13.03,16.03C11.29,15.91,9.82,17,9,17s-2.12-.94-3.48-.92a5.164,5.164,0,0,0-4.36,2.64C-.7,21.95.69,26.73,2.5,29.35c.89,1.28,1.94,2.72,3.33,2.67,1.34-.05,1.84-.86,3.46-.86s2.07.86,3.48.84c1.44-.03,2.35-1.31,3.23-2.59a11.138,11.138,0,0,0,1.46-3,4.65,4.65,0,0,1-2.83-4.27,4.741,4.741,0,0,1,2.28-4.01,5.013,5.013,0,0,0-3.88-2.1m-1.07-1.72a4.652,4.652,0,0,0,1.1-3.37,4.752,4.752,0,0,0-3.11,1.6A4.426,4.426,0,0,0,8.83,15.8a3.917,3.917,0,0,0,3.13-1.49" transform="translate(-0.278 -10.94)" fill="#fffffe"/>
-					</svg>	
+					<svg xmlns="http://www.w3.org/2000/svg" width="17.182" height="21.082" viewBox="0 0 17.182 21.082"
+						alt="Logo Apple">
+						<path id="apple-logo"
+							d="M13.03,16.03C11.29,15.91,9.82,17,9,17s-2.12-.94-3.48-.92a5.164,5.164,0,0,0-4.36,2.64C-.7,21.95.69,26.73,2.5,29.35c.89,1.28,1.94,2.72,3.33,2.67,1.34-.05,1.84-.86,3.46-.86s2.07.86,3.48.84c1.44-.03,2.35-1.31,3.23-2.59a11.138,11.138,0,0,0,1.46-3,4.65,4.65,0,0,1-2.83-4.27,4.741,4.741,0,0,1,2.28-4.01,5.013,5.013,0,0,0-3.88-2.1m-1.07-1.72a4.652,4.652,0,0,0,1.1-3.37,4.752,4.752,0,0,0-3.11,1.6A4.426,4.426,0,0,0,8.83,15.8a3.917,3.917,0,0,0,3.13-1.49"
+							transform="translate(-0.278 -10.94)" fill="#fffffe" />
+					</svg>
 				</a>
 			</li>
 			<li>
 				<a href="index.html">
-					<svg id="bag_small" xmlns="http://www.w3.org/2000/svg" width="17" height="48" viewBox="0 0 17 48"  alt="Winkelmand">
-					  <rect id="boundingbox" width="17" height="48" fill="none"/>
-					  <path id="bag" d="M14.5,15.98H12.712a4.227,4.227,0,0,0-8.424,0H2.5A2.5,2.5,0,0,0,0,18.48v11a2.5,2.5,0,0,0,2.5,2.5h12a2.5,2.5,0,0,0,2.5-2.5v-11A2.5,2.5,0,0,0,14.5,15.98ZM8.5,13.1a3.243,3.243,0,0,1,3.212,2.875H5.288A3.243,3.243,0,0,1,8.5,13.105ZM16,29.48a1.5,1.5,0,0,1-1.5,1.5H2.5A1.5,1.5,0,0,1,1,29.48v-11a1.5,1.5,0,0,1,1.5-1.5h12a1.5,1.5,0,0,1,1.5,1.5Z" fill="#fff"/>
+					<svg id="bag_small" xmlns="http://www.w3.org/2000/svg" width="17" height="48" viewBox="0 0 17 48"
+						alt="Winkelmand">
+						<rect id="boundingbox" width="17" height="48" fill="none" />
+						<path id="bag"
+							d="M14.5,15.98H12.712a4.227,4.227,0,0,0-8.424,0H2.5A2.5,2.5,0,0,0,0,18.48v11a2.5,2.5,0,0,0,2.5,2.5h12a2.5,2.5,0,0,0,2.5-2.5v-11A2.5,2.5,0,0,0,14.5,15.98ZM8.5,13.1a3.243,3.243,0,0,1,3.212,2.875H5.288A3.243,3.243,0,0,1,8.5,13.105ZM16,29.48a1.5,1.5,0,0,1-1.5,1.5H2.5A1.5,1.5,0,0,1,1,29.48v-11a1.5,1.5,0,0,1,1.5-1.5h12a1.5,1.5,0,0,1,1.5,1.5Z"
+							fill="#fff" />
 					</svg>
-				  </a>
+				</a>
 			</li>
-		</ul>  
+		</ul>
 	</header>
     <main>
         <section>
@@ -47,26 +74,41 @@
         </section>
         <section>
             <section>
-                <section>
-                    <img src="images/store-card-13-watch-nav-202108.png" alt="Apple watch">
-                    <p>Apple watch</p>
-                </section>
-                <section>
-                    <img src="images/store-card-13-ipad-nav-202108.png" alt="iPad pro">
-                    <p>iPad</p>
-                </section>
-                <section>
-                    <img src="images/store-card-13-appletv-nav-202108.png" alt="Apple tv">
-                    <p>Apple tv</p>
-                </section>
-                <section>
-                    <img src="images/store-card-13-airtags-nav-202108.png" alt="Airtags">
-                    <p>Airtag</p>
-                </section>
-                <section>
-                    <img src="images/store-card-13-airpods-nav-202108.png" alt="Airpods">
-                    <p>Airpods</p>
-                </section>
+                <a href="">
+                    <section>
+                        <img src="images/store-card-13-watch-nav-202108.png" alt="Apple watch">
+                        <p>Apple watch</p>
+                    </section>
+                </a>
+                <a href="">
+                    <section>
+                        <img src="images/store-card-13-ipad-nav-202108.png" alt="iPad pro">
+                        <p>iPad</p>
+                    </section>
+                </a>
+                <a href="">
+                    <section>
+                        <img src="images/store-card-13-appletv-nav-202108.png" alt="Apple tv">
+                        <p>Apple tv</p>
+                    </section>
+                </a>
+                <a href="">
+                    <section>
+                        <img src="images/store-card-13-airtags-nav-202108.png" alt="Airtags">
+                        <p>Airtag</p>
+                    </section>
+                </a>
+                <a href="">
+                    <section>
+                        <img src="images/store-card-13-airpods-nav-202108.png" alt="Airpods">
+                        <p>Airpods</p>
+                    </section>
+                </a>
+                
+                
+                
+                
+                
             </section>
             
         </section>
@@ -75,7 +117,7 @@
             <section>
                 <article>
                     <h4>NIEUW</h4>
-                    <h3>iPhone 13 Pro.<br>O. Zo. Pro.</h3>
+                    <a href="#"><h3>iPhone 13 Pro.<br>O. Zo. Pro.</h3></a>
                     <p>iPhone 13 Pro.</p>
                 </article>
                 <article>
@@ -89,7 +131,7 @@
             <h2>Een helpende hand. Waar en wanneer je die nodig hebt.</h2>
             <section>
                 <article>
-                    <h3>Shop een-op-een met een Specialist. Online of in de Store. </h3>
+                    <a href="#"><h3>Shop een-op-een met een Specialist. Online of in de Store. </h3></a>
                 </article>
                 <section>
                     <article>
@@ -111,7 +153,7 @@
                           <path d="M33.905,17.063l-14-7.581a3.991,3.991,0,0,0-3.811,0l-14,7.581A4,4,0,0,0,0,20.581V35.419a4,4,0,0,0,2.095,3.518l14,7.581a3.989,3.989,0,0,0,3.811,0l14-7.581A4,4,0,0,0,36,35.419V20.581A4,4,0,0,0,33.905,17.063ZM17.048,11.241a1.993,1.993,0,0,1,1.9,0l13.8,7.47-6.383,3.645L11.943,14.005ZM18,27.133,3.253,18.711l6.629-3.589L24.355,23.5ZM3.048,37.178A2,2,0,0,1,2,35.419V20.581a1.955,1.955,0,0,1,.036-.262L17,28.865V44.733ZM34,35.419a2,2,0,0,1-1.048,1.759L19,44.733V28.865l14.964-8.545a1.955,1.955,0,0,1,.036.262Z"></path>
                         </g>
                       </svg>
-                    <h2>Laat het gratis en contactloos bezorgen.</h2>
+                      <a href="#"><h2>Laat het gratis en contactloos bezorgen.</h2></a>
                 </article>
                 <article>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 56" class="as-svgicon as-svgicon-bagwithapple as-svgicon-elevated" aria-hidden="true" role="img">
@@ -130,7 +172,7 @@
                 <article>
                     <img src="images/MM283.jpg" alt="Siliconenhoesje met MagSafe voor iPhone 13">
                     <h5>Nieuw</h5>
-                    <h4>Siliconenhoesje met MagSafe voor iPhone 13 - Kalkroze</h4>
+                    <a href="#"><h4>Siliconenhoesje met MagSafe voor iPhone 13 - Kalkroze</h4></a>
                     <p>€ 55,00</p>
                 </article>
                 <article>
@@ -145,7 +187,7 @@
             <h2>AirTag. Zo houd je supersimpel je spullen in de gaten.</h2>
             <section>
                 <article>
-                    <h3>Wat weg is, is gezien.</h3>
+                    <a href="#"><h3>Wat weg is, is gezien.</h3></a>
                     <p>Bevestig er een aan je sleutels. Stop er een in je rugzak. Vind ze terug met de ‘Zoek mijn’‑app.</p>
                 </article>
                 <article>
@@ -160,7 +202,7 @@
             <h2>Meer doen met je producten van Apple. Het wordt alleen maar leuker.</h2>
             <section>
                 <article>
-                    <h3>Bekijk een virtuele Today at Apple-sessie.</h3>
+                    <a href="#"><h3>Bekijk een virtuele Today at Apple-sessie.</h3></a>
                 </article>
                 <article>
                     <h3>Vier Apple services. Eén handig abonnement.</h3>
@@ -172,7 +214,7 @@
             <section>
                 <article>
                     <p>ONDERWIJS</p>
-                    <h2>Koop Mac of iPad met onderwijskorting.</h2>
+                    <a href="#"><h2>Koop Mac of iPad met onderwijskorting.</h2></a>
                 </article>
                 <article>
                     <p>BEDRIJF</p>
@@ -182,8 +224,134 @@
         </section>
     </main>
     <footer>
+		<section>
+			<ul>
+				<li>€ 4,99/maand na afloop van gratis proefperiode. Eén abonnement per ‘Delen met gezin’‑groep. Aanbod
+					geldig tot 3 maanden na activering van een in aanmerking komend device. Het abonnement wordt
+					automatisch verlengd totdat het wordt opgezegd. Er zijn beperkingen en andere </li>
+			</ul>
+		</section>
 
-    </footer>
+		<section>
+			<section>
+				<button onclick="bestellen()">Bestellen en informatie</button>
+				<section id="bestellen-info">
+					<ul>
+						<li><a href="store.html">Store</a></li>
+						<li><a href="#">Mac</a></li>
+						<li><a href="#">iPad</a></li>
+						<li><a href="#">iPhone</a></li>
+						<li><a href="#">Watch</a></li>
+						<li><a href="#">Airpods</a></li>
+						<li><a href="#">Tv & Woning</a></li>
+						<li><a href="#">Alleen met Apple</a></li>
+						<li><a href="#">Accessoires</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<button onclick="service()">Service</button>
+				<section id="service">
+					<ul>
+						<li><a href="#">Apple music</a></li>
+						<li><a href="#">Apple TV+</a></li>
+						<li><a href="#">Apple arcade</a></li>
+						<li><a href="#">iCloud</a></li>
+						<li><a href="#">Apple One</a></li>
+						<li><a href="#">Apple Pay</a></li>
+						<li><a href="#">App store</a></li>
+					</ul>
+				</section>
+			
+				<button onclick="account()">Account</button>
+				<section id="account">
+					<ul>
+						<li><a href="#">Je Apple ID beheren</a></li>
+						<li><a href="#">Apple Store-account</a></li>
+						<li><a href="#">iCloud.com</a></li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<button onclick="store()">Apple Store</button>
+				<section id="store">
+					<ul>
+						<li><a href="#">Zoek een Store</a></li>
+						<li><a href="#">Genius Bar</a></li>
+						<li><a href="#">Today at Apple</a></li>
+						<li><a href="#">Apple Zomerkamp</a></li>
+						<li><a href="#">Apple Store-app</a></li>
+						<li><a href="#">Refurbished</a></li>
+						<li><a href="#">Apple Trade In</a></li>
+						<li><a href="#">Bestelstatus</a></li>
+						<li><a href="#">Hulp bij bestellen</a></li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<button onclick="bedrijven()">Voor bedrijven</button>
+				<section id="bedrijven">
+					<ul>
+						<li><a href="#">Apple en het bedrijfsleven</a></li>
+						<li><a href="#">Aankopen voor je bedrijf</a></li>
+					</ul>
+				</section>
+			
+				<button onclick="onderwijs()">Voor het onderwijs</button>
+				<section id="onderwijs">
+					<ul>
+						<li><a href="#">Apple en het onderwijs</a></li>
+						<li><a href="#">Aankopen voor je studie</a></li>
+					</ul>
+				</section>
+			
+				<button onclick="gezondheidszorg()">Voor de gezondheidszorg</button>
+				<section id="gezondheidszorg">
+					<ul>
+						<li><a href="#">Apple in de gezondheidszorg</a></li>
+						<li><a href="#">Gezondheidszorg op Apple Watch</a></li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<button onclick="waarden()">Waarden van Apple</button>
+				<section id="waarden">
+					<ul>
+						<li><a href="#">Toegankelijkheid</a></li>
+						<li><a href="#">Milieu</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Verantwoordelijkheid van toeleveranciers</a></li>
+					</ul>
+				</section>
+			
+				<button onclick="overApple()">Over Apple</button>
+				<section id="overApple">
+					<ul>
+						<li><a href="#">Newsroom</a></li>
+						<li><a href="#">Apple Leadership</a></li>
+						<li><a href="#">Carrieremogelijkheden</a></li>
+						<li><a href="#">Garantie</a></li>
+						<li><a href="#">Investeerders</a></li>
+						<li><a href="#">Ethiek en naleving</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Werkgelegenheid</a></li>
+						<li><a href="#">Contact opnemen</a></li>
+					</ul>
+				</section>
+			</section>
+
+			
+		</section>
+		<section>
+			<p>
+				Andere manieren om te shoppen: <a href="/nl/retail/" data-analytics-title="find an apple store">Zoek een
+					Apple&nbsp;Store</a> of <a href="https://locate.apple.com/nl/nl/"
+					data-analytics-title="other retailers or resellers" data-analytics-exit-link="">andere winkel</a>
+				bij jou in de&nbsp;buurt. <span class="nowrap">Of bel 0800&nbsp;0200&nbsp;570.</span>
+			</p>
+		</section>
+	</footer>
 
     <script src="scripts/script.js"></script>
 </body>
