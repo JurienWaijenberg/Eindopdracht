@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Jurien Waijenberg
 
 #### Je startniveau:
-Zwart
+Blauw
 
 #### Je focus:
-Surface plane
+Responsive
  
 </details>
 

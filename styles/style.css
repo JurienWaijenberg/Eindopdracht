@@ -11,7 +11,6 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -61,7 +60,7 @@ main section:nth-child(1) {
   width: 100%;
 }
 
-main section:nth-child(2) {
+main>section:nth-child(2) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -72,22 +71,23 @@ main section:nth-child(2) {
   position: relative;
 }
 
-main section:nth-child(2) a {
+main>section:nth-child(2) a {
   border: 2px solid #000;
 }
 
-main section:nth-child(2) img {
+main>section:nth-child(2) img {
   position: absolute;
   padding: 0em 3em;
   bottom: 0;
   left: 0;
 }
 
-main section:nth-child(3) {
+main>section:nth-child(3) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
   height: 77vh;
+  max-height: 600px;
   padding: 1em;
   padding-bottom: 0px;
   color: #fff;
@@ -95,23 +95,24 @@ main section:nth-child(3) {
   position: relative;
 }
 
-main section:nth-child(3) a {
+main>section:nth-child(3) a {
   border: 2px solid #fff;
   color: #fff;
 }
 
-main section:nth-child(3) img {
+main>section:nth-child(3) img {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-section:nth-child(4) {
+main>section:nth-child(4) {
   background: url(../images/Apple-watch-7.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
   height: 77vh;
+  max-height: 600px;
   padding: 1em;
   padding-bottom: 0px;
   color: #000;
@@ -119,7 +120,7 @@ section:nth-child(4) {
   position: relative;
 }
 
-section:nth-child(4) img:nth-child(1) {
+main>section:nth-child(4) img:nth-child(1) {
   margin-top: 77px;
   width: 124px;
   height: 48px;
@@ -127,16 +128,15 @@ section:nth-child(4) img:nth-child(1) {
   margin-right: auto;
 }
 
-section:nth-child(4) a {
+main>section:nth-child(4) a {
   border: 2px solid #000;
 }
 
-section:nth-child(5) {
-  background: url(../images/Ipad-mini.jpg);
+main>section:nth-child(5) {
+  /*background: url(../images/Ipad-mini.jpg);*/
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 94vh;
   padding: 1em;
   padding-bottom: 0px;
   color: #000;
@@ -145,7 +145,7 @@ section:nth-child(5) {
   overflow: hidden;
 }
 
-section:nth-child(5) img:nth-child(1) {
+main>section:nth-child(5) img:nth-child(1) {
   margin-top: 77px;
   width: 160px;
   height: 32px;
@@ -153,15 +153,19 @@ section:nth-child(5) img:nth-child(1) {
   margin-right: auto;
 }
 
-section:nth-child(5) a {
+main>section:nth-child(5) a {
   border: 2px solid #000;
 }
 
-section:nth-child(6) {
+main>section:nth-child(5) img {
+  margin-top: 3em;
+}
+
+main>section:nth-child(6) {
+  /*background: url(../images/Ipad.jpg);*/
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 94vh;
   padding: 1em;
   padding-bottom: 0px;
   color: #000;
@@ -170,14 +174,12 @@ section:nth-child(6) {
   overflow: hidden;
 }
 
-section:nth-child(6) a {
+main>section:nth-child(6) a {
   border: 2px solid #000;
 }
 
-section:nth-child(6) img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+main>section:nth-child(6) img {
+  margin-top: 5em;
 }
 
 section {
@@ -242,7 +244,7 @@ a.dark {
   border-color: #fff;
 }
 
-section div {
+section>section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -254,7 +256,7 @@ ul {
 }
 
 li {
-  font-size: 12px;
+  font-size: 1em;
   line-height: 1.33337;
   font-weight: 400;
   letter-spacing: -.01em;
@@ -268,18 +270,416 @@ footer {
   padding: 1em;
 }
 
-@media only screen and (min-width: 520px) {
-  section:nth-child(2) {
-    width: 50%;
+nav ul {
+  display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    height: 94vh;
+    z-index: 2;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    padding: 0em 4em;
+}
+
+nav ul li {
+  width: 100%;
+  padding: 1em 0em;
+  border-bottom: 2px solid #313132;
+}
+
+nav ul li a {
+  color: #f5f5f7;
+}
+
+nav ul li:nth-last-child(1) {
+  border-bottom: 0px solid;
+}
+
+#navbar {
+  display: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 36px;
+  border-radius: 15px;
+  background-color: #313132;
+  color: #f5f5f7;
+  border: 0px;
+  padding-left: 1em;
+}
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  margin-top: 0px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon4 {
+}
+
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+  top: 9px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 0px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 18px;
+  left: 0px;
+}
+
+
+footer section:nth-child(2) section ul {
+  width: 100%;
+}
+footer section:nth-child(2) section ul li a {
+  margin-top: 0px;
+  text-align: left;
+  color: #424245;
+  font-size: 1em;
+}
+
+footer section:nth-child(2) button {
+  background-color: #f5f5f7;
+  border: none;
+  text-align: left;
+  padding: 10px 0px;
+  color: #6e6e73;
+  border-bottom: 1px solid #6e6e73;
+  width: 100%;
+  font-size: 1em;
+}
+
+footer section:nth-child(2) button::after {
+  content: '+';
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: -2px;
+  margin-right: 8px;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#bestellen-info {
+  overflow: hidden;
+  height: 0;
+}
+
+#service {
+  overflow: hidden;
+  height: 0;
+}
+
+#account {
+  overflow: hidden;
+  height: 0;
+}
+#store {
+  overflow: hidden;
+  height: 0;
+}
+#bedrijven {
+  overflow: hidden;
+  height: 0;
+}
+#onderwijs {
+  overflow: hidden;
+  height: 0;
+}
+#gezondheidszorg {
+  overflow: hidden;
+  height: 0;
+}
+#waarden {
+  overflow: hidden;
+  height: 0;
+}
+#overApple {
+  overflow: hidden;
+  height: 0;
+}
+
+
+footer p {
+  font-size: 1em;
+    line-height: 1.1764805882;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: left;
+    color: #6e6e73;
+}
+
+footer p span {
+  font-size: 1em;
+    line-height: 1.1764805882;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: left;
+    color: #6e6e73;
+}
+
+footer p a {
+    font-size: 1em;
+    line-height: 1.1764805882;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #06c;
+    background: none;
+    min-width: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: left;
+    border-radius: 0px;
+    min-width: auto;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+footer section:nth-child(2) section {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-size: auto;
+  padding: 0px;
+}
+
+footer section:nth-child(2) section section {
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+@media only screen and (min-width: 510px) {
+  main section:nth-child(2) {
+    width: 100%;
+    height: auto;
+    padding: 0% 20%;
   }
-  section:nth-child(3) {
-    width: 50%;
-    height: 81vh;
+  main>section:nth-child(2) img {
+    position: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 50px;
+  }
+  main>section:nth-child(3) {
+    width: 100%;
+    height: auto;
+    padding: 0% 20%;
+    max-height: 1000px;
+  }
+  main section:nth-child(3) img {
+    position: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+  }
+  
+  
+}
+
+@media only screen and (min-width: 768px) {
+  main>section:nth-child(1) {
+    padding: 1% 20%;
+  }
+  main>section:nth-child(2) {
+    padding: 0% 20%;
+  }
+  main>section:nth-child(3) {
+    padding: 0% 20%;
+  }
+  main>section:nth-child(4) {
+    padding: 0% 20%;
   }
   section:nth-child(5) {
     width: 50%;
+    background-size: 450px;
+    padding: 0% 10%;
   }
   section:nth-child(6) {
     width: 50%;
+    background-size: 550px;
+    padding: 0% 10%;
+  }
+  main section:nth-child(4) {
+    width: 100%;
+    height: 75vh;
+    min-height: 800px;
+    padding: 1% 20%;
+    max-height: 1000px;
+    background: url(../images/Dekstop/apple-watch-7-desktop.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (min-width: 1080px) {
+  main>section:nth-child(1) {
+    padding: 1% 30%;
+  }
+  main>section:nth-child(2) {
+    padding: 0% 30%;
+  }
+  main>section:nth-child(3) {
+    padding: 0% 30%;
+  }
+  main>section:nth-child(4) {
+    padding: 0% 30%;
+  }
+
+  footer>section {
+    max-width: 1200px;
+    padding: 0 22px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer section:nth-child(2)  {
+    display: flex;
+    flex-direction: row;
+  }
+  footer section:nth-child(2) section {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-size: auto;
+    padding: 0px;
+  }
+
+  footer section:nth-child(2) button {
+    border-bottom: 0px;
+    color: #000;
+    pointer-events:none;
+    font-weight: 600;
+  }
+  footer section:nth-child(2) button::after {
+    content: '';
+  }
+
+  footer section:nth-child(2) section ul {
+    margin-top: 0px;
+  }
+
+  footer section:nth-child(2) section ul li a {
+    padding: 5px 0px;
+  }
+
+  #bestellen-info {
+    overflow: visible;
+    height: auto;
+  }
+  
+  #service {
+    overflow: visible;
+    height: auto;
+  }
+  
+  #account {
+    overflow: visible;
+    height: auto;
+  }
+  #store {
+    overflow: visible;
+    height: auto;
+  }
+  #bedrijven {
+    overflow: visible;
+    height: auto;
+  }
+  #onderwijs {
+    overflow: visible;
+    height: auto;
+  }
+  #gezondheidszorg {
+    overflow: visible;
+    height: auto;
+  }
+  #waarden {
+    overflow: visible;
+    height: auto;
+  }
+  #overApple {
+    overflow: visible;
+    height: auto;
   }
 }
