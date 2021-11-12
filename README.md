@@ -23,7 +23,7 @@ Blauw
 
 #### Je focus:
 Responsive
- 
+
 </details>
 
 
@@ -38,14 +38,14 @@ Responsive
 ### Je opdracht:
 <a href="https://www.apple.com/nl/">Apple</a>
 
-#### Screenshot(s) van de eerste pagina (small screen): 
+#### Screenshot(s) van de eerste pagina (small screen):
 hier de naam van de pagina  
 <img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/Apple-home.jpg" width="375px" alt="home pagina van apple">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
 <img src="images/IPhone12.jpg" width="375px" alt="store pagina van apple">
- 
+
 </details>
 
 
@@ -57,10 +57,10 @@ hier de naam van de pagina
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
+### de hele pagina:
 <img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/Breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
-### dynamisch deel (bijv menu): 
+### dynamisch deel (bijv menu):
 <img src="https://github.com/JurienWaijenberg/Eindopdracht/blob/main/images/proces/Dynamisch-deel.png" width="375px" alt="Dynamisch deel, de header navigatie">
 
 </details>
@@ -169,7 +169,7 @@ Ook deze week heb ik feedback gekregen van Juul. Omdat ik niet veel verder ben g
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-Afgelopen week was erg druk, ik heb te veel tijd in vormgeven gestoken waardoor ik niet tevreden ben met het eindresultaat van mijn website. Ik heb veel dingen niet afgekregen. De header is niet af de footer ook niet. Er zit nog geen microanimatie in en mijn proces verslag was nog niet klaar. 
+Afgelopen week was erg druk, ik heb te veel tijd in vormgeven gestoken waardoor ik niet tevreden ben met het eindresultaat van mijn website. Ik heb veel dingen niet afgekregen. De header is niet af de footer ook niet. Er zit nog geen microanimatie in en mijn proces verslag was nog niet klaar.
 
 ### Screenshot(s)
 
