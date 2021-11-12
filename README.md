@@ -40,8 +40,8 @@ Surface plane
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
- ![ScreenShot](/images/Home-Apple.jpg)
-<img src="images/Home-Apple.jpg" width="375px" alt="home pagina van apple">
+ ![ScreenShot](../images/Home-Apple.jpg)
+<img src="../images/Home-Apple.jpg" width="375px" alt="home pagina van apple">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
