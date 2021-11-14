@@ -1,4 +1,6 @@
 // JavaScript Document
+var navicon = document.getElementById('nav-icon');
+navicon.addEventListener("click", mobilenav, false);
 
 function mobilenav() {
     var x = document.getElementById("navbar");

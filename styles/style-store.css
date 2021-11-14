@@ -3,9 +3,20 @@
   box-sizing:border-box;  
 }
 
+:root {
+  --white:#ffffff; 
+  --black:#000000;
+  --header-background-color:#313132;
+  --background-color:#f5f5f7;
+  --footer-text-color:#424245;
+  --footer-header-color:#6e6e73;
+}
+
+
+
 body {
   margin: 0px;
-  background: #F5F5F7;
+  background: var(--background-color);
   text-align: left;
 }
 
@@ -18,7 +29,7 @@ main {
 }
 
 header {
-  background: #313132;
+  background: var(--header-background-color);
   padding: 0em 1em;
   position: fixed;
   width: 100%;
@@ -44,7 +55,7 @@ header a {
 }
 
 a {
-  color: #000;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -119,7 +130,7 @@ h5 {
 
 span {
   margin-top: 25px;
-  color: #6e6e73;
+  color: var(--footer-header-color);
   font-size: 12px;
   line-height: 1.3333733333;
   font-weight: 400;
@@ -144,8 +155,8 @@ a {
 }
 
 a.dark {
-  color: #fff;
-  border-color: #fff;
+  color: var(--white);
+  border-color: var(--white);
 }
 
 section div {
@@ -191,7 +202,7 @@ main>section {
 
 main>section:nth-child(1) {
   text-align: center;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 main>section:nth-child(1) p {
@@ -233,14 +244,14 @@ section:nth-child(4)>section>article:nth-child(1) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fff;
+  background-color: var(--white);
 }
 section:nth-child(4)>section>article:nth-child(2) {
   background: url(../images/store-card-40-ipadmini-202109.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fff;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
 }
@@ -261,14 +272,14 @@ section:nth-child(5)>section>article:nth-child(1) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fff;
+  background-color: var(--white);
 }
 section:nth-child(5) section section article:nth-child(1) {
   background: url(../images/store-card-25-apps-202108_FMT_WHH.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fff;
+  background-color: var(--white);
   height: 213px;
   margin-bottom: 1.5em;
 }
@@ -277,7 +288,7 @@ section:nth-child(5) section section article:nth-child(2) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fff;
+  background-color: var(--white);
   height: 213px;
 }
 
@@ -333,7 +344,7 @@ section:nth-child(8) section article:nth-child(1) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 section:nth-child(9) {
@@ -352,16 +363,16 @@ section:nth-child(9) section article:nth-child(1) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fff;
-  border: 5px solid #fff;
-  border-bottom: 2px solid #fff;
+  background-color: var(--white);
+  border: 5px solid var(--white);
+  border-bottom: 2px solid var(--white);
 }
 section:nth-child(9) section article:nth-child(2) {
   background: url(../images/store-card-50-subscriptions-202108_FMT_WHH.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 section:nth-child(10) {
@@ -380,25 +391,25 @@ section:nth-child(10) section article:nth-child(1) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fff;
+  background-color: var(--white);
 }
 section:nth-child(10) section article:nth-child(2) {
   background: url(../images/store-card-40-small-business-202108_FMT_WHH.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #000;
+  background-color: var(--black);
 }
 
 section:nth-child(10) section article:nth-child(2) h2{
-  color: #fff;
+  color: var(--white);
 }
 
 
 article {
   width: 300px;
   height: 450px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 18px;
   padding: 2em;
   flex: 0 0 auto;
@@ -423,7 +434,7 @@ li {
 }
 
 footer {
-  background: #F5F5F7;
+  background: var(--background-color);
   padding: 1em;
 }
 
@@ -434,7 +445,7 @@ nav ul {
     position: absolute;
     height: 94vh;
     z-index: 2;
-    background: #000;
+    background: var(--black);
     top: 50px;
     left: 0;
     bottom: 0;
@@ -444,11 +455,11 @@ nav ul {
 nav ul li {
   width: 100%;
   padding: 1em 0em;
-  border-bottom: 2px solid #313132;
+  border-bottom: 2px solid var(--header-background-color);
 }
 
 nav ul li a {
-  color: #f5f5f7;
+  color: var(--background-color);
 }
 
 nav ul li:nth-last-child(1) {
@@ -465,8 +476,8 @@ input[type="text"] {
   width: 100%;
   height: 36px;
   border-radius: 15px;
-  background-color: #313132;
-  color: #f5f5f7;
+  background-color: var(--header-background-color);
+  color: var(--background-color);
   border: 0px;
   padding-left: 1em;
 }
@@ -493,7 +504,7 @@ input[type="text"] {
   height: 3px;
   margin-top: 0px;
   width: 100%;
-  background: #fff;
+  background: var(--white);
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -561,17 +572,17 @@ footer section:nth-child(2) section ul {
 footer section:nth-child(2) section ul li a {
   margin-top: 0px;
   text-align: left;
-  color: #424245;
+  color: var(--footer-text-color);
   font-size: 1em;
 }
 
 footer section:nth-child(2) button {
-  background-color: #f5f5f7;
+  background-color: var(--background-color);
   border: none;
   text-align: left;
   padding: 10px 0px;
-  color: #6e6e73;
-  border-bottom: 1px solid #6e6e73;
+  color: var(--footer-header-color);
+  border-bottom: 1px solid var(--footer-header-color);
   width: 100%;
   font-size: 1em;
 }
@@ -636,7 +647,7 @@ footer p {
     letter-spacing: -0.022em;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     text-align: left;
-    color: #6e6e73;
+    color: var(--footer-header-color);
 }
 
 footer p span {
@@ -646,7 +657,7 @@ footer p span {
     letter-spacing: -0.022em;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     text-align: left;
-    color: #6e6e73;
+    color: var(--footer-header-color);
 }
 
 footer p a {
@@ -708,7 +719,7 @@ footer section:nth-child(2) section section {
 
   footer section:nth-child(2) button {
     border-bottom: 0px;
-    color: #000;
+    color: var(--black);
     pointer-events:none;
     font-weight: 600;
   }
